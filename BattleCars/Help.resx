@@ -595,4 +595,11 @@
         Tc7gAJuQm5gAMzJmYABxOZy4mABw2zmYAH//2Q==
 </value>
   </data>
+  <data name="lblDescription.Text" xml:space="preserve">
+    <value>The goal of the game is for the players to hit and crash into eachother,which takes them health points. The game starts 
+with each payer having health value of 200. Each crash takes various number of health points.A front crash takes 3 points,
+side crash 10 points and back crash 7 points.  On the field appear a shiled, a heart and a lightning bolt. The bolt increases 
+the speed of the car, the heart increases its health and the shield protects it in crashes in the next few seconds.
+</value>
+  </data>
 </root>

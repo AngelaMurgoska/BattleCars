@@ -40,6 +40,12 @@ namespace WindowsFormsApp1
             lblOptions1.BackColor = Color.Transparent;
             var pos4 = this.PointToScreen(lblOptions2.Location);
             pos4 = pictureBox1.PointToClient(pos4);
+            var pos5 = this.PointToScreen(lblDescription.Location);
+            pos5 = pictureBox1.PointToClient(pos5);
+            lblDescription.Parent = pictureBox1;
+            lblDescription.Location = pos5;
+            lblDescription.BackColor = Color.Transparent;
+            lblDescription.Location = new Point((int)(this.Width - lblDescription.Width * 1.28), (int)(this.Height - lblDescription.Height * 1.4));
             lblOptions2.Parent = pictureBox1;
             lblOptions2.Location = pos;
             lblOptions2.BackColor = Color.Transparent;

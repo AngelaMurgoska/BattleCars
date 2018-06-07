@@ -90,7 +90,7 @@
             this.lblOptions2.AutoSize = true;
             this.lblOptions2.Font = new System.Drawing.Font("Constantia", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOptions2.ForeColor = System.Drawing.Color.White;
-            this.lblOptions2.Location = new System.Drawing.Point(226, 136);
+            this.lblOptions2.Location = new System.Drawing.Point(420, 131);
             this.lblOptions2.Name = "lblOptions2";
             this.lblOptions2.Size = new System.Drawing.Size(281, 360);
             this.lblOptions2.TabIndex = 4;
@@ -102,9 +102,9 @@
             this.btnBack.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBack.Font = new System.Drawing.Font("Constantia", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
-            this.btnBack.Location = new System.Drawing.Point(580, 420);
+            this.btnBack.Location = new System.Drawing.Point(514, 390);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(123, 55);
+            this.btnBack.Size = new System.Drawing.Size(151, 61);
             this.btnBack.TabIndex = 5;
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
@@ -115,7 +115,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(783, 529);
+            this.pictureBox1.Size = new System.Drawing.Size(817, 609);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -123,11 +123,11 @@
             // lblDescription
             // 
             this.lblDescription.AutoSize = true;
-            this.lblDescription.Font = new System.Drawing.Font("High Tower Text", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescription.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lblDescription.Location = new System.Drawing.Point(55, 260);
+            this.lblDescription.Font = new System.Drawing.Font("High Tower Text", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescription.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lblDescription.Location = new System.Drawing.Point(360, 521);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(1066, 100);
+            this.lblDescription.Size = new System.Drawing.Size(994, 88);
             this.lblDescription.TabIndex = 7;
             this.lblDescription.Text = resources.GetString("lblDescription.Text");
             // 
@@ -136,7 +136,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(783, 529);
+            this.ClientSize = new System.Drawing.Size(817, 609);
             this.Controls.Add(this.lblDescription);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblOptions2);

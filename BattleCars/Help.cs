@@ -49,6 +49,12 @@ namespace WindowsFormsApp1
             lblOptions2.Parent = pictureBox1;
             lblOptions2.Location = pos;
             lblOptions2.BackColor = Color.Transparent;
+            var pos5 = this.PointToScreen(lblDescription.Location);
+            pos5 = pictureBox1.PointToClient(pos5);
+            lblDescription.Parent = pictureBox1;
+            lblDescription.Location = pos5;
+            lblDescription.BackColor = Color.Transparent;
+            lblDescription.Location = new Point((int)(this.Width - lblDescription.Width*1.2), (int)(this.Height - lblDescription.Height*1.3));
             lblHelp.Location = new Point(this.Width / 2 - lblHelp.Width / 2, (int)(this.Height /7.4) - lblHelp.Height / 2);
             lblPlayer1.Location=new Point(this.Width / 4 - lblPlayer1.Width/2, (int)(this.Height / 4) -lblPlayer1.Height / 2);
             lblPlayer2.Location = new Point((int)(this.Width / 1.4) - lblPlayer2.Width / 2, this.Height / 4 - lblPlayer2.Height / 2);

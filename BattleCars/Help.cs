@@ -40,6 +40,12 @@ namespace WindowsFormsApp1
             lblOptions1.BackColor = Color.Transparent;
             var pos4 = this.PointToScreen(lblOptions2.Location);
             pos4 = pictureBox1.PointToClient(pos4);
+            var pos5 = this.PointToScreen(lblDescription.Location);
+            pos5 = pictureBox1.PointToClient(pos5);
+            lblDescription.Parent = pictureBox1;
+            lblDescription.Location = pos5;
+            lblDescription.BackColor = Color.Transparent;
+            lblDescription.Location = new Point((int)(this.Width - lblDescription.Width * 1.28), (int)(this.Height - lblDescription.Height * 1.4));
             lblOptions2.Parent = pictureBox1;
             lblOptions2.Location = pos;
             lblOptions2.BackColor = Color.Transparent;
@@ -48,7 +54,7 @@ namespace WindowsFormsApp1
             lblPlayer2.Location = new Point((int)(this.Width / 1.4) - lblPlayer2.Width / 2, this.Height / 4 - lblPlayer2.Height / 2);
             lblOptions1.Location = new Point((int)(this.Width / 3.9) - lblOptions1.Width / 2, (int)(this.Height / 1.8) - lblOptions1.Height / 2);
             lblOptions2.Location = new Point((int)(this.Width / 1.34) - lblOptions2.Width / 2, (int)(this.Height / 1.8) - lblOptions2.Height / 2);
-            btnBack.Location=new Point((int)(this.Width - btnBack.Width*2), this.Height - btnBack.Height*2);
+            btnBack.Location=new Point((int)(this.Width - btnBack.Width*1.7), this.Height - btnBack.Height*2);
         }
 
         private void btnBack_Click(object sender, EventArgs e)

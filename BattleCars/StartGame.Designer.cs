@@ -75,9 +75,9 @@
             // 
             this.btnExit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnExit.BackgroundImage")));
             this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnExit.Location = new System.Drawing.Point(229, 392);
+            this.btnExit.Location = new System.Drawing.Point(241, 390);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(240, 84);
+            this.btnExit.Size = new System.Drawing.Size(236, 82);
             this.btnExit.TabIndex = 6;
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.button4_Click);

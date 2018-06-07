@@ -40,12 +40,9 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            TwoPlayers sp = new TwoPlayers();
-            sp.StartPosition = FormStartPosition.Manual;
-            sp.Location = new Point(395, 240);
-            sp.Width = 580;
-            sp.Height = 350;
-            sp.ShowDialog();
+            TwoPlayers sp = new TwoPlayers(this); 
+            sp.Show();
+            this.Hide();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -66,12 +63,9 @@ namespace WindowsFormsApp1
 
         private void btnSinglePlayer_Click(object sender, EventArgs e)
         {
-            SinglePlayer sp = new SinglePlayer();
-            sp.StartPosition = FormStartPosition.Manual;
-            sp.Location = new Point(405, 240);
-            sp.Width = 550;
-            sp.Height = 350;
-            sp.ShowDialog();
+            SinglePlayer sp = new SinglePlayer(this);
+            sp.Show();
+            this.Hide();
         }
     }
 }

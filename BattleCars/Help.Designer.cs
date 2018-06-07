@@ -36,6 +36,7 @@
             this.lblOptions2 = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblDescription = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -114,17 +115,29 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(687, 491);
+            this.pictureBox1.Size = new System.Drawing.Size(817, 609);
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // lblDescription
+            // 
+            this.lblDescription.AutoSize = true;
+            this.lblDescription.Font = new System.Drawing.Font("High Tower Text", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescription.ForeColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lblDescription.Location = new System.Drawing.Point(360, 521);
+            this.lblDescription.Name = "lblDescription";
+            this.lblDescription.Size = new System.Drawing.Size(994, 88);
+            this.lblDescription.TabIndex = 7;
+            this.lblDescription.Text = resources.GetString("lblDescription.Text");
             // 
             // Help
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(687, 491);
+            this.ClientSize = new System.Drawing.Size(817, 609);
+            this.Controls.Add(this.lblDescription);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.lblOptions2);
             this.Controls.Add(this.lblPlayer2);
@@ -149,5 +162,6 @@
         private System.Windows.Forms.Label lblOptions2;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblDescription;
     }
 }

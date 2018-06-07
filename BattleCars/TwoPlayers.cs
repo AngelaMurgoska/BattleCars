@@ -14,9 +14,13 @@ namespace WindowsFormsApp1
     {
         public String PalyerOne;
         public String PlayerTwo;
-        public TwoPlayers()
+        public Form f { set; get; }
+        public TwoPlayers( Form f)
         {
             InitializeComponent();
+            this.f = f;
+            FormBorderStyle = FormBorderStyle.None;
+            WindowState = FormWindowState.Maximized;
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             var pos = this.PointToScreen(lblPlayerName.Location);
             pos = pictureBox1.PointToClient(pos);
@@ -33,6 +37,14 @@ namespace WindowsFormsApp1
             lblPlayer2.Parent = pictureBox1;
             lblPlayer2.Location = pos2;
             lblPlayer2.BackColor = Color.Transparent;
+            lblPlayerName.Location = new Point(this.Width / 2 - lblPlayerName.Width/2, this.Height / 10);
+            lblPlayer1.Location = new Point(this.Width / 2 - 2*lblPlayer1.Width - 5, this.Height*2 / 10);
+            lblPlayer2.Location = new Point(this.Width / 2 - 2 * lblPlayer1.Width - 5, this.Height * 3 / 10);
+            txtPlayer1.Location = new Point(this.Width / 2, this.Height * 2 / 10);
+            txtPlayer2.Location = new Point(this.Width / 2 , this.Height * 3 / 10);
+
+            btnBack.Location = new Point(this.Width / 2 - btnBack.Width - 10, this.Height * 4 / 10);
+            button1.Location = new Point(this.Width / 2 + 10, this.Height * 4 / 10);
         }
 
         private void TwoPlayers_Load(object sender, EventArgs e)
@@ -42,7 +54,15 @@ namespace WindowsFormsApp1
 
         private void btnBack_Click(object sender, EventArgs e)
         {
+            f.Show();
             this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TwoPlayerGame twG = new TwoPlayerGame(txtPlayer1.Text,txtPlayer2.Text);
+            twG.ShowDialog();
+            this.Hide();
         }
     }
 }
